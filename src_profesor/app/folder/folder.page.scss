@@ -1,0 +1,50 @@
+ion-menu-button {
+  color: var(--ion-color-mycolor);
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.preguntasfre{
+  color: rgba($color: #980055, $alpha: 1.0);
+  font-size: small;
+}
+
+.cajabienvenida{
+  font-size: small;
+}
+
+.titulobienvenida{
+  font-size: medium;
+  color:#980055
+}
+
+.logo{
+  width:75px;
+  height:75px;
+  border-radius: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}

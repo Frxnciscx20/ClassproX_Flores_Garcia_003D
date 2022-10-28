@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recuperacion Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="ion-text-center">Recuperar Contraseña</h1>
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label>Correo para recuperar:</ion-label>
+      <ion-input type="email" placeholder="" name="correo" [(ngModel)]="usuario.correo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>rut</ion-label>
+      <ion-input type="text" placeholder="" name="rut" [(ngModel)]="usuario.rut" required></ion-input>
+    </ion-item>
+
+    <ion-button [disabled] ="formulario.invalid" type="submit" expand="full" fill="outline" shape="round" color="danger" routerLink="">
+      Recuperar
+    </ion-button>
+  </form>  
+</ion-content>

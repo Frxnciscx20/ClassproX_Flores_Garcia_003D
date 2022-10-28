@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Login Profesor!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-tittle>Login Profesor!</ion-card-tittle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup] = "formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Correo: </ion-label>
+          <ion-input type="email" formControlName="correo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña: </ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="Ingresar()" expand="block" fill="outline" shape="round" color="mycolor">
+        Ingresar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <img class="logo" src="assets/img/logo.png"/>
+  </ion-item>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']">
+
+        Registrarse
+      </ion-button>
+      <br>
+      <ion-button [routerLink]="['/recu']">
+
+        Recuperar contraseña
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
